@@ -1,0 +1,159 @@
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --very-dark-grayish-blue: hsl(217, 19%, 35%);
+   --desaturated-dark-blue: hsl(214, 17%, 51%);
+   --grayish-blue: hsl(212, 23%, 69%);
+   --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body {
+   background-color: var(--light-grayish-blue);
+   color: var(--grayish-blue);
+   font-family: "Manrope", sans-serif;
+   font-size: 13px;
+}
+
+main {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.container {
+   background-color: #fff;
+   border-radius: 10px;
+   width: 320px;
+   height: 510px;
+   position: relative;
+}
+
+.drawers-img {
+   border-radius: 10px 10px 0 0;
+   height: 40%;
+   width: 100%;
+}
+
+.text-section {
+   padding: 2rem;
+}
+
+.heading {
+   color: var(--very-dark-grayish-blue);
+   font-size: 1rem;
+   font-weight: 700;
+}
+
+.description {
+   line-height: 1.5;
+   margin: 20px 0;
+}
+
+.profile-section {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 2rem;
+}
+
+.profile {
+   display: flex;
+   align-items: center;
+}
+
+.avatar-img {
+   border-radius: 50%;
+   display: inline-block;
+   margin-right: 1rem;
+   width: 15%;
+}
+
+.name {
+   color: var(--very-dark-grayish-blue);
+   font-weight: 700;
+}
+
+.share-btn {
+   background-color: var(--light-grayish-blue);
+   border: none;
+   border-radius: 50%;
+   cursor: pointer;
+   padding: 0.75rem;
+   z-index: 99;
+}
+
+.share-btn:hover {
+   background-color: var(--very-dark-grayish-blue);
+}
+
+.social-section {
+   display: flex;
+   align-items: center;
+   border-radius: 0 0 10px 10px;
+   background-color: var(--very-dark-grayish-blue);
+   padding: 1.5rem;
+   width: 100%;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+}
+
+.share-options {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 70%;
+}
+
+.share-options p {
+   letter-spacing: 10px;
+}
+
+.hidden {
+   opacity: 0;
+}
+
+@media screen and (min-width: 800px) {
+   .container {
+      height: 280px;
+      width: 730px;
+      display: flex;
+   }
+
+   .drawers-img {
+      border-radius: 10px 0 0 10px;
+      height: 100%;
+      width: 40%;
+   }
+
+   .text-section {
+      width: 60%;
+   }
+
+   .heading {
+      font-size: 1.25rem;
+   }
+
+   .profile-section {
+      margin-top: 1rem;
+   }
+
+   .social-section {
+      border-radius: 10px;
+      width: 35%;
+      height: 3rem;
+      left: 34rem;
+      top: 10rem;
+   }
+
+   .share-options {
+      width: 100%;
+   }
+}
